@@ -6,7 +6,7 @@ class Controls{
         this.reverse = false;
 
         switch(type){
-            case "KEY":
+            case "AI":
                 this.#addKeyboardListeners();
                 break;
             case "DUMMY":

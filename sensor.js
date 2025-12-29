@@ -1,7 +1,7 @@
 class Sensor{
     constructor(car){
         this.car = car;
-        this.rayCount = 10;
+        this.rayCount = 5;
         this.rayLength = 150;
         this.raySpread = Math.PI/2; // same as 45 degree
 
@@ -53,10 +53,7 @@ class Sensor{
             const minoffset = Math.min(...offsets);
             return touches.find(e=>e.offset = minoffset);
         }
-
     }
-
-    
 
     #castRays(){
         this.rays = [];
